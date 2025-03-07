@@ -262,6 +262,6 @@ const landingcolumnWidths = ["40%", "10%", "8%", "10%", "7%", "15%", "10%"];
 
 const headercolumnWidths = ["38%", "10%", "10%", "12%", "15%", "15%"];
 
-const songcolumnWidths = ["30%", "25%", "25%", "20%"];
+const songcolumnWidths = ["25%", "40%", "20%", "15%"];
 
 export {selectFilterdat,landingtableDat,resultTableDat,sampleTabDat,landingcolumnWidths,collectableDat,headercolumnWidths,sampleSongDat,songcolumnWidths}
