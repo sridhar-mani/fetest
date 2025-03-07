@@ -1,4 +1,4 @@
-const timeArToString = (time)=>{
+const timeArToString = (time:Array<string>)=>{
     let temp = [...time]
     for(let i=0;i<temp.length;i++){
         if(i==0 ){

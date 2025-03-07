@@ -21,8 +21,7 @@ interface TableShowProps {
 const TableShow: React.FC<TableShowProps> = ({ tData,headers,widths }) => {
 
     const context = useContext(FilterCont);
-    //@ts-ignore
-    let filter;
+    let filter:string[];
     let search;
     console.log(context)
     if (context) {

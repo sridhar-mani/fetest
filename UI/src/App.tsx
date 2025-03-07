@@ -1,7 +1,8 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import LandingPage from './Containers/LandingPage'
-import CollectionPage from './components/CollectionPage'
+import CollectPage from './Containers/CollectPage'
+import NotFound from './Containers/ErrorPage'
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route path='/' element={<LandingPage></LandingPage>}></Route>
-      <Route path='/collection/:id' element={<CollectionPage></CollectionPage>}></Route>
+      <Route path='/collection/:id' element={<CollectPage></CollectPage>}></Route>
+      <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       </BrowserRouter>
   
