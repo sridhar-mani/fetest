@@ -19,7 +19,7 @@ const CollectionPage=()=>{
       data: original.data.map((item) => ({ ...item }))
     };
     return (
-        <div className="bg-gray-100 flex flex-col w-full p-0 m-0 h-full">
+        <div className="bg-gray-100 min-h-screen p-0 m-0">
             <div className="text-left text-black w-full flex py-1 px-4">
                 <span onClick={handleClick} className=" text-gray-500 font-semibold hover:cursor-pointer hover:text-black flex items-center">Overview <ChevronRight size={16}></ChevronRight></span>
                 {dat.data[0].value[0]}
