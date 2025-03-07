@@ -10,7 +10,7 @@ const landingtableDat=[
     const collectableDat=[
       "Artist",
       "Type",
-      "Song Count","Size","Duration","Released On"
+      "Song Count","Total Size","Total Duration","Released On"
   ]
 
 const resultTableDat=[
