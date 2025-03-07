@@ -7,6 +7,11 @@ const landingtableDat=[
         "Type",
         "Song Count","Duration","Size","Released On",""
     ]
+    const collectableDat=[
+      "Artist",
+      "Type",
+      "Song Count","Size","Duration","Released On"
+  ]
 
 const resultTableDat=[
 "Song","Performers","Duration","Size"
@@ -200,9 +205,63 @@ const sampleTabDat = [
       },
 ];
 
+const sampleSongDat = [
+  {
+    id: "1",
+    data: [
+      { type: "text", value: "The Horse and the Infant" },
+      { type: "text", value: "Jorge Rivera-Herrans, Luke Holt & Cast of EPIC: The Musical" },
+      { type: "text", value: "00:02:15" },
+      { type: "text", value: "15 MB" },
+    ]
+  },
+  {
+    id: "2",
+    data: [
+      { type: "text", value: "Just a Man" },
+      { type: "text", value: "Jorge Rivera-Herrans & Cast of EPIC: The Musical" },
+      { type: "text", value: "00:02:30" },
+      { type: "text", value: "16 MB" },
+  
+    ]
+  },
+  {
+    id: "3",
+    data: [
+      { type: "text", value: "Full Speed Ahead" },
+      { type: "text", value: "Jorge Rivera-Herrans, Armando Julián, Steven Dookie & Cast of EPIC: The Musical" },
+      { type: "text", value: "00:05:10" },
+      { type: "text", value: "24 MB" },
+    
+    ]
+  },
+  {
+    id: "4",
+    data: [
+      { type: "text", value: "Open Arms" },
+      { type: "text", value: "Jorge Rivera-Herrans & Steven Dookie" },
+      { type: "text", value: "00:05:10" },
+      { type: "text", value: "23 MB" },
+    
+    ]
+  },
+  {
+    id: "5",
+    data: [
+      { type: "text", value: "Warrior of the Mind" },
+      { type: "text", value: "Jorge Rivera-Herrans, Teagan Earley & Cast of EPIC: The Musical" },
+      { type: "text", value: "00:05:10" },
+      { type: "text", value: "23 MB" },
+     
+    ]
+  }
+];
+
 
 const landingcolumnWidths = ["40%", "10%", "8%", "10%", "7%", "15%", "10%"];
 
+const headercolumnWidths = ["38%", "10%", "10%", "12%", "15%", "15%"];
 
+const songcolumnWidths = ["30%", "25%", "25%", "20%"];
 
-export {selectFilterdat,landingtableDat,resultTableDat,sampleTabDat,landingcolumnWidths}
+export {selectFilterdat,landingtableDat,resultTableDat,sampleTabDat,landingcolumnWidths,collectableDat,headercolumnWidths,sampleSongDat,songcolumnWidths}

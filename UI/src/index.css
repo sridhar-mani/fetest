@@ -21,12 +21,12 @@
 
 .custom-scrollbar::-webkit-scrollbar-track {
   background: white;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #a5a8aa;
-  border-radius: 10px;
+  border-radius: 50px;
   transition: background 0.3s;
 }
 

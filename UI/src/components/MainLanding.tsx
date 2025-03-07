@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import {sampleTabDat} from "../data"
+import {landingcolumnWidths, landingtableDat, sampleTabDat} from "../data"
 import NavBar from "./subCom/NavBar"
 import SearchBar from "./subCom/SearchBar"
 import TableShow from "./subCom/TableShow"
@@ -27,8 +27,10 @@ const MainLanding = ()=>{
         <div className="bg-gray-100 flex flex-col w-full h-full">
             <NavBar>Overview</NavBar>
             <div className="p-4 rounded-md bg-gray-100 h-11/12">
+            <div className="h-full w-full bg-white rounded-2xl">
                 <SearchBar></SearchBar>
-                <TableShow tData={sampleTabDat}></TableShow>
+                <TableShow tData={sampleTabDat} headers={landingtableDat} widths={landingcolumnWidths}></TableShow>
+                </div>
             </div>
         </div>
         </FilterCont.Provider>

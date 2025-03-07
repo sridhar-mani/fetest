@@ -1,26 +1,27 @@
 const timeArToString = (time)=>{
-
-    for(let i=0;i<time.length;i++){
+    let temp = [...time]
+    for(let i=0;i<temp.length;i++){
         if(i==0 ){
-            time[i]=time[i]+' hours'
+            temp[i]=temp[i]+' hours'
         }else if(i==1){
-            time[i]=time[i]+' minutes'
+            temp[i]=temp[i]+' minutes'
         }else if(i==2){
-            time[i]=time[i]+' seconds'
+            temp[i]=temp[i]+' seconds'
         }
     }
-    if(time[0].includes("00")) time.splice(0,1)
-    if(time[1].includes("00")) time.splice(1,1)
-
-    for(let i=0;i<time.length;i++){
-        if(i!==time.length-1){
-            time[i]=time[i]+' '
+    let hourEmp;let minEmp;
+    if(temp[0].includes("00 hours")) hourEmp=true; 
+    if(temp[1].includes("00 mintues")) minEmp=true; 
+        if(hourEmp) temp = temp.slice(1,time.length)
+            if(hourEmp && minEmp) temp = temp.slice(2,time.length)
+    for(let i=0;i<temp.length;i++){
+        if(i!==temp.length-1){
+            temp[i]=temp[i]+' '
         }
     }
 
-    console.log(time.join(''))
 
-    return time.join('')
+    return temp.join('')
 
 }
 
