@@ -1,10 +1,16 @@
+import { useContext } from "react"
+import { FilterCont } from "../MainLanding"
+
 const SearchBarSub=()=>{
+  const {search,setSearch} = useContext(FilterCont)
+  console.log(search)
 return( 
 <div
   className="flex items-center border w-64 text-black focus-within:border-indigo-500 transition duration-300 pr-3 gap-2 bg-white border-gray-500/30 h-8 rounded-[5px] overflow-hidden"
 >
   <input
     type="text"
+    onChange={(e)=>setSearch(e.target.value)}
     placeholder="Search for products"
     className="w-full h-full pl-4 outline-none placeholder-gray-500 text-sm"
   />
