@@ -11,7 +11,6 @@ const CollectionPage: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   
-  // Use singular state for the main collection and an array for its songs.
   const [collection, setCollection] = useState<TableRow | null>(null);
   const [songs, setSongs] = useState<TableRow[]>([]);
   const [loading, setLoading] = useState(true);
